@@ -1,0 +1,53 @@
+.side {
+	margin-bottom: 20px;
+}
+h1 {
+	margin-top: 0;
+	font-family: 'Oswald';
+}
+h4 {
+	border-bottom: dotted 1px gray;
+	color: #555555;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	padding-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media (max-width:979px) {
+	/* Remove any padding from the body */
+	body {
+		padding-top: 0;
+	}
+	
+}
+
+@media print {
+	body {
+		zoom: 80%;
+		width: 700px;
+	}
+	h4 {
+		border-bottom: solid 1px gray;
+		color: #555555;
+		text-transform: uppercase;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.label {
+		margin-top: 5px;
+		padding-top: 5px;
+	}
+	* {
+		background-color: transparent;
+	}
+	
+	a[href]:after {
+		content: none !important;
+	}
+	.hidden-print {
+		display: none !important;
+	}
+}
