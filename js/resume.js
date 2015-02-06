@@ -341,7 +341,7 @@ app.controller('ResumeCtrl', function($scope) {
         url: "http://gacc-am.blogspot.com.br/"
     };
     item.details = [];
-    item.details.push("Created and organized a yearly event called <strong>Don't bend, don't break</strong>, which over BRL 100,000.00 (about USD 50,000.00) towards GACC");
+    item.details.push("Created and organized a yearly event called <strong>Don't bend, don't break</strong>, which raised over BRL 100,000.00 (about USD 50,000.00) towards GACC");
     resume.volunteerWork.push(item);
     item = {
         title: "Founder",
