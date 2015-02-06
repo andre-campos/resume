@@ -1,4 +1,4 @@
-# resume
+# AngularJS Resume
 Responsive resume backed by AngularJS
 
 The point of having a responsive resume online is for it to be viewed in a browser or mobile device. Printing the resume doesn't look that great on some browsers. Twitter Bootstrap isn't famous for producing pixel-perfect pages for printers. Safari actually did a good job for printing the resume, so that's the method I used to generate the PDF that can be downloaded. If you wish to fork this resume, make sure you export a PDF version of your version with Safari.
