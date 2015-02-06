@@ -18,7 +18,7 @@ app.controller('ResumeCtrl', function($scope) {
     info.facebook = "andre.n.campos";
     info.linkedin = "andrencampos";
     info.photoUrl = "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/00d/39b/267fc2f.jpg";
-    info.bio = "Born in Brazil, André moved to Canada for his undergraduate studies at UVic. After returning home to Manaus, André finished a Masters Degree while beating a lymphoma and built the software that runs his family's international commerce business.";
+    info.bio = "Born in Brazil, André moved to Canada for his undergraduate studies at UVic. After returning home to Manaus, André finished a Masters Degree while battling cancer. Then, he designed and built the software that runs his family's international commerce business.";
     info.twitter = undefined;
     resume.info = info;
     resume.education = [];
@@ -175,7 +175,7 @@ app.controller('ResumeCtrl', function($scope) {
     };
     item.url = "http://www.sap.com";
     item.duties = [];
-    item.duties.push("Joined the tools team on the maintenence and development of new features for the Crystal Reports plugin for Eclipse and Microsoft Visual Studio");
+    item.duties.push("Joined the tools team on the maintenance and development of new features for the Crystal Reports plugin for Eclipse and Microsoft Visual Studio");
     item.skills = [];
     item.skills.push({
         proficiency: "high",
@@ -330,7 +330,7 @@ app.controller('ResumeCtrl', function($scope) {
         to: "present"
     };
     item.details = [];
-    item.details.push("Works as an obnotious waiter serving pizza for thousands of customers; all profit goes to the <a href='www.manaus.apaebrasil.org.br'>APAE</a> Foundation");
+    item.details.push("Works as an obnoxious waiter serving pizza for thousands of customers; all profit goes to the <a href='www.manaus.apaebrasil.org.br'>APAE</a> Foundation");
     resume.volunteerWork.push(item);
     item = {
         title: "Proud member",
