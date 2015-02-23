@@ -53,7 +53,7 @@ app.controller('ResumeCtrl', function($scope) {
     };
     item.url = "http://www.reckaduaneira.com.br";
     item.duties = [];
-    item.duties.push("Designed a web-based application integrated to the brazilian international commerce systems (SISCOMEX)");
+    item.duties.push("Designed a mission-critical application integrated to the brazilian international commerce systems (SISCOMEX)");
     item.duties.push("Designed a customer-facing website for interaction with clients");
     item.skills = [];
     item.skills.push({
@@ -66,7 +66,7 @@ app.controller('ResumeCtrl', function($scope) {
     });
     item.skills.push({
         proficiency: "high",
-        name: "Java Server Faces"
+        name: "JSF"
     });
     item.skills.push({
         proficiency: "high",
@@ -102,7 +102,7 @@ app.controller('ResumeCtrl', function($scope) {
     });
     item.skills.push({
         proficiency: "high",
-        name: "Java Server Faces"
+        name: "JSF"
     });
     item.skills.push({
         proficiency: "high",
@@ -318,7 +318,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "medium",
         name: "device drivers"
     });
-    
+
     resume.experience.items.push(item);
 
     resume.volunteerWork = [];
