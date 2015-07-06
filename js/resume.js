@@ -23,21 +23,32 @@ app.controller('ResumeCtrl', function($scope) {
     resume.info = info;
     resume.education = [];
     var item = {
-        title: "MSc in Computer Science",
+        title: "Stanford Igniter",
+        institution: "Stanford Graduate School of Business",
+        location: "São Paulo, SP Brazil",
+        from: "2015",
+        logo: "http://www.stanford.edu/~diamondr/stanford_seal.png"
+    }; //logo: "http://estruturas.ufam.edu.br/images/logoUFAMcor.jpg"};
+    resume.education.push(item);
+    item = {
+        title: "MSc, CS",
         institution: "Federal University of Amazonas",
         location: "Manaus, AM Brazil",
         from: "2009",
         to: "2011",
-        gpa: "10.0/10.0"
+        gpa: "10.0/10.0",
+        logo: "http://estruturas.ufam.edu.br/images/logoUFAMcor.jpg"
     }; //logo: "http://estruturas.ufam.edu.br/images/logoUFAMcor.jpg"};
     resume.education.push(item);
+
     item = {
-        title: "BEng in Computer Engineering",
+        title: "BEng, CEng",
         institution: "University of Victoria",
         location: "Victoria, BC Canada",
         from: "2002",
         to: "2007",
-        gpa: "6.7/9.0"
+        gpa: "6.7/9.0",
+        logo: "https://media.licdn.com/mpr/mpr/shrink_60_60/p/5/005/081/376/1d6e87b.png"
     }; //logo: "https://media.licdn.com/mpr/mpr/shrink_60_60/p/5/005/081/376/1d6e87b.png"};
     resume.education.push(item);
     resume.experience = {

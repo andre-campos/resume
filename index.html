@@ -64,7 +64,7 @@ ga('send', 'pageview');
     
 </div>
 <div class="row">
-    <div class="col col-sm-8">
+    <div class="col col-md-8">
         <h4><i class="fa fa-cogs"></i> {{resume.experience.title}} </h4>
         <p class="text-right hidden-print hidden-xs">
         Proficiency Indicator:
@@ -85,7 +85,7 @@ ga('send', 'pageview');
             
         </div>
     </div>
-    <div class="col-sm-4 ">
+    <div class="col-md-4 ">
         
         <div class="side" ng-show="resume.info.bio">
             <h4><i class="fa fa-user"></i> Bio</h4>
@@ -94,9 +94,9 @@ ga('send', 'pageview');
         <div class="side" ng-show="resume.education.length > 0">
             <h4><i class="fa fa-graduation-cap"></i> Education</h4>
             <p ng-repeat="degree in resume.education">
-            
-            <strong>{{degree.title}}</strong><span class="pull-right">{{degree.from}} - {{degree.to}}</span><br>
-            <span>{{degree.institution}} <br>{{degree.location}}</span>
+            <img ng-src="{{degree.logo}}" style="float: left; height: 60px; margin-right: 10px" class="hidden-print"></img>
+            <strong>{{degree.title}}</strong><span class="pull-right">{{degree.from}}<span ng-show="degree.to"> - {{degree.to}}</span></span><br>
+            <span style="display: block; text-wrap: nowrap;">{{degree.institution}} <br>{{degree.location}}</span>
             <br>
             </p>
             
