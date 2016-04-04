@@ -26,23 +26,17 @@
    <script src="js/resume.js"></script>
    </head>
    <body ng-controller="ResumeCtrl">
-      <!-- Analytics to figure out if I'm popular -->
-      <!--         <script>
-         (function(i, s, o, g, r, a, m) {
-                 i['GoogleAnalyticsObject'] = r;
-                 i[r] = i[r] || function() {
-                                 (i[r].q = i[r].q || []).push(arguments)
-                         },
-                         i[r].l = 1 * new Date();
-                 a = s.createElement(o),
-                         m = s.getElementsByTagName(o)[0];
-                 a.async = 1;
-                 a.src = g;
-                 m.parentNode.insertBefore(a, m)
-         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-         ga('create', 'UA-59468177-1', 'auto');
+      <!-- Analytics -->
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-75959616-1', 'auto');
          ga('send', 'pageview');
-         </script> -->
+
+      </script>
       <div class="container">
          <div class="row">
             <div class="col col-sm-12">
@@ -91,7 +85,8 @@
                      <a  ng-click="minimize('languages')" >{{resume.minimize.languages | minimizeFilter:['+', '-']}}</a>
                      </span>
                   </h4>
-                  <my-languages info="resume" ng-hide="resume.minimize.languages"></my-language>
+                  <my-languages info="resume" ng-hide="resume.minimize.languages">
+                  </my-language>
                </div>
                <div class="side" ng-show="resume.volunteerWork.length > 0">
                   <h4><i class="fa fa-users"></i> Volunteer Work</h4>
@@ -128,10 +123,9 @@
                   <my-education info="resume" ng-hide="resume.minimize.education"> </my-education>
                </div>
                <h4><i class="fa fa-cogs"></i> {{resume.experience.title}}
-<span class="pull-right" >
-                     <a  ng-click="minimize('experience')" >{{resume.minimize.experience | minimizeFilter:['+', '-']}}</a>
-                     </span>
-
+                  <span class="pull-right" >
+                  <a  ng-click="minimize('experience')" >{{resume.minimize.experience | minimizeFilter:['+', '-']}}</a>
+                  </span>
                </h4>
                <my-work-experience info="resume" ng-hide="resume.minimize.experience"> </my-work-experience>
                <!-- <div class="hidden-print">
