@@ -1,0 +1,3 @@
+<span>
+   <p ng-repeat="lang in resume.languages"><span class="f16"><span class="flag {{lang.country}} hidden-print"></span></span> <strong>{{lang.name}}</strong> {{lang.level}}<br> <span ng-repeat="star in lang.stars" class="text-primary"><i class="fa fa-star" ng-show="star"></i><i class="fa fa-star-o" ng-hide="star"></i></span> </p>
+</span>

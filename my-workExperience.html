@@ -1,0 +1,11 @@
+<!-- <!-- <p class="text-right hidden-print hidden-xs"> Proficiency Indicator: <span class="label" proficiency="'low'" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> Low</span> <span class="label" proficiency="'medium'" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> Medium</span> <span class="label" proficiency="'high'" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> High</span> </p> -->
+<div ng-repeat="item in resume.experience.items" style="margin-bottom: 20px" >
+   <div ng-hide="item.hide">
+      <h5><strong>{{item.title}} </strong> at <a href="{{item.url}}">{{item.company}}</a> <span class="pull-right">{{item.from}} - {{item.to}} </span></h5>
+      <ul class="list-unstyled">
+         <li ng-repeat="duty in item.duties"> <i class="fa fa-caret-right"></i> {{duty}} </li>
+      </ul>
+      <span ng-repeat="skill in item.skills">
+      <span class="label label-warning" proficiency="skill.proficiency" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> {{skill.name}}</span> </span>
+   </div>
+</div>
