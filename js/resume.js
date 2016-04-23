@@ -123,7 +123,7 @@ app.controller('ResumeCtrl', function($scope) {
     resume.experience.items.push(item);
     item = {
         title: "IT Director",
-        company: "Reck Aduaneira da Amazonia",
+        company: "Reck Aduaneira da Amazônia",
         location: "Manaus, AM Brazil",
         from: "01/2009",
         to: "Present"
