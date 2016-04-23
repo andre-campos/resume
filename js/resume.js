@@ -18,7 +18,7 @@ app.controller('ResumeCtrl', function($scope) {
     info.facebook = "andre.n.campos";
     info.linkedin = "andrencampos";
     info.photoUrl = "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/00d/39b/267fc2f.jpg";
-    info.bio = "Born in Brazil, André moved to Canada for his undergraduate studies at UVic. After returning home to Manaus, André finished a Masters Degree while battling cancer. Then, he designed and built the software that runs his family's international commerce business.";
+    info.bio = "André was born in Brazil and moved to Canada for his undergraduate studies at UVic. After returning home to Manaus, André finished a Masters Degree while battling cancer. Then, he designed and built the software that runs his family's international commerce business while doing some external consulting work. After taking the Stanford Ignite program on entrepreneurship, André decided to turn the international commerce platform into an actual business.";
     info.twitter = undefined;
     resume.info = info;
     resume.education = [];
@@ -55,6 +55,72 @@ app.controller('ResumeCtrl', function($scope) {
         title: "Work Experience",
         items: []
     };
+
+    item = {
+        title: "Founder & CEO",
+        company: "Sigraweb",
+        location: "Manaus, AM Brazil",
+        from: "01/2016",
+        to: "Present"
+    };
+    item.url = "http://www.sigraweb.com";
+    item.duties = [];
+    item.duties.push("Designed an online application hosted on MS Azure for brazilian international commerce operations");
+    item.duties.push("Created a business plan and pitched it to investors");
+        
+    item.skills = [];
+    item.skills.push({
+        proficiency: "high",
+        name: "AngularJS",
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Spring"
+    });
+   
+    item.skills.push({
+        proficiency: "high",
+        name: "MS SQL Server"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Azure"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Leadership"
+    });
+    
+    resume.experience.items.push(item);
+    item = {
+        title: "Consultant",
+        company: "Finis Consultoria Econômica",
+        location: "Manaus, AM Brazil",
+        from: "07/2015",
+        to: "Present"
+    };
+    item.url = "http://www.finisce.com.br";
+    item.duties = [];
+    item.duties.push("Designed an online financial planning platform");
+    
+    item.skills = [];
+    item.skills.push({
+        proficiency: "high",
+        name: "AngularJS",
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Spring"
+    });
+   item.skills.push({
+        proficiency: "high",
+        name: "PostgreSQL"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Heroku"
+    });
+    resume.experience.items.push(item);
     item = {
         title: "IT Director",
         company: "Reck Aduaneira da Amazonia",
@@ -104,8 +170,7 @@ app.controller('ResumeCtrl', function($scope) {
         to: "01/2015"
     };
     item.duties = [];
-    item.duties.push("Designed a web-based CRM tailored to stock brokers");
-    item.duties.push("Product was deployed to 7 different offices across Brazil");
+    item.duties.push("Designed a web-based CRM tailored to stock brokers that was deployed to 7 different offices across Brazil");
     item.skills = [];
     item.skills.push({
         proficiency: "high",
@@ -137,7 +202,7 @@ app.controller('ResumeCtrl', function($scope) {
     };
     item.url = "http://www.fucapi.br";
     item.duties = [];
-    item.duties.push("Joined a team that built a set-top box from scratch, based on the ST7100 platform. The product followed the Brazilian Digital TV specifications");
+    item.duties.push("Joined a team that built a set-top box (Brazilian DTV standard) from scratch, based on the ST7100 platform");
     item.skills = [];
     item.skills.push({
         proficiency: "high",
@@ -182,11 +247,11 @@ app.controller('ResumeCtrl', function($scope) {
         company: "Business Objects (now SAP)",
         location: "Vancouver, BC Canada",
         from: "01/2006",
-        to: "12/2008"
+        to: "12/2006"
     };
     item.url = "http://www.sap.com";
     item.duties = [];
-    item.duties.push("Joined the tools team on the maintenance and development of new features for the Crystal Reports plugin for Eclipse and Microsoft Visual Studio");
+    item.duties.push("Joined the tools team on the development of new features for the Crystal Reports plugin for Eclipse and MS Visual Studio");
     item.skills = [];
     item.skills.push({
         proficiency: "high",
@@ -201,32 +266,18 @@ app.controller('ResumeCtrl', function($scope) {
         name: "C#"
     });
     resume.experience.items.push(item);
-    item = {
-        title: "Programmer (Co-op)",
-        company: "Pearson Coal Petrography",
-        location: "Victoria, BC Canada",
-        from: "05/2005",
-        to: "08/2005"
-    };
-    item.url = "http://www.coalpetrography.com";
-    item.duties = [];
-    item.duties.push("Developed interface modules between a PC and an automated petrographic analysis apparatus (microscope, motorized tray, and high-definition camera)");
-    item.skills = [];
-    item.skills.push({
-        proficiency: "low",
-        name: "C++"
-    });
-    resume.experience.items.push(item);
+    
     item = {
         title: "Java Programmer (Co-op)",
         company: "Pearson Coal Petrography",
         location: "Victoria, BC Canada",
-        from: "09/2004",
-        to: "12/2004"
+        from: "09/2004 to 12/2004 and from 05/2005",
+        to: "08/2005"
     };
     item.url = "http://www.coalpetrography.com";
     item.duties = [];
     item.duties.push("Helped to build a web-based, customer-facing system to publish coal analysis results");
+    item.duties.push("Developed interface modules between a PC and an automated petrographic analysis apparatus");
     item.skills = [];
     item.skills.push({
         proficiency: "high",
@@ -240,6 +291,11 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "low",
         name: "JBoss Application Server"
     });
+    item.skills.push({
+        proficiency: "low",
+        name: "C++"
+    });
+
     item.hide = true;
     resume.experience.items.push(item);
     item = {
@@ -275,7 +331,6 @@ app.controller('ResumeCtrl', function($scope) {
     };
     item.duties = [];
     item.duties.push("Helped to create a safe and welcoming environment at UVic Residences");
-    item.duties.push("Created a fundraiser organization called RA's 4 Good");
     item.skills = [];
     item.skills.push({
         proficiency: "medium",
@@ -292,12 +347,13 @@ app.controller('ResumeCtrl', function($scope) {
         title: "Trainee",
         company: "Fucapi",
         location: "Manaus, AM Brazil",
-        from: "05/2003",
+        from: "01/2001 to 08/2002 and from 05/2003",
         to: "08/2003"
     };
     item.url = "http://www.fucapi.br";
     item.duties = [];
     item.duties.push("Developed J2ME applications for Nokia devices");
+    item.duties.push("Developed Linux device drivers for ATMs and an implementation of the brazilian electoral system");
     item.skills = [];
     item.skills.push({
         proficiency: "high",
@@ -307,20 +363,6 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "medium",
         name: "J2ME"
     });
-    resume.experience.items.push(item);
-
-    item = {
-        title: "Trainee",
-        company: "Fucapi",
-        location: "Manaus, AM Brazil",
-        from: "01/2001",
-        to: "08/2002"
-    };
-    item.url = "http://www.fucapi.br";
-    item.duties = [];
-    item.duties.push("Participated on the development of a Linux-based electronic voting system for the Brazilian Elections");
-    item.duties.push("Developed Linux device drivers for ATMs");
-    item.skills = [];
     item.skills.push({
         proficiency: "high",
         name: "Linux"
@@ -329,8 +371,8 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "medium",
         name: "device drivers"
     });
-
     resume.experience.items.push(item);
+
 
     resume.volunteerWork = [];
     item = {
@@ -352,7 +394,7 @@ app.controller('ResumeCtrl', function($scope) {
         url: "http://gacc-am.blogspot.com.br/"
     };
     item.details = [];
-    item.details.push("Created and organized a yearly event called <strong>Don't bend, don't break</strong>, which raised over BRL 100,000.00 (about USD 50,000.00) towards GACC");
+    item.details.push("Created and organized a yearly event called <strong>Don't bend, don't break</strong>, which raised over BRL 100,000.00 towards GACC");
     resume.volunteerWork.push(item);
     item = {
         title: "Founder",
@@ -363,8 +405,8 @@ app.controller('ResumeCtrl', function($scope) {
         url: "http://communications.uvic.ca/releases/makepdf.php?type=release&display=release&id=719"
     };
     item.details = [];
-    item.details.push("Led fellow RA's during the organization a wide range of fundraising activities across the UVic campus, from bottle drives to dodgeball tournaments");
-    item.details.push("Raised over CAD 12,000 towards the United Way");
+    item.details.push("Led fellow RA's during the organization of a wide range of fundraising activities across the UVic campus");
+    item.details.push("Raised over $ 12,000 towards the United Way");
     resume.volunteerWork.push(item);
 
     resume.awards = {

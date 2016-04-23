@@ -1,28 +1,36 @@
 <!doctype html>
 <html ng-app="ng-resume">
-    <meta name=viewport content="width=device-width">
-    <meta charset="utf-8"></meta>
-    <title>André Campos</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'></link>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'  type='text/css'></link>
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'  type='text/css'></link>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" media="all"></link>
-    <link rel="stylesheet" type="text/css" href="https://cloud.github.com/downloads/lafeber/world-flags-sprite/flags16.css"></link>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"></link>
-    <link rel="stylesheet" href="css/resume.css"></link>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
-    <script src="js/resume.js"></script>
+<meta name=viewport content="width=device-width">
+<meta charset="utf-8"></meta>
+<title>André Campos</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></link>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'></link>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'></link>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" media="all"></link>
+<link rel="stylesheet" type="text/css" href="https://cloud.github.com/downloads/lafeber/world-flags-sprite/flags16.css"></link>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"></link>
+<link rel="stylesheet" href="css/resume.css"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+<script src="js/resume.js"></script>
 </head>
+
 <body ng-controller="ResumeCtrl">
     <!-- Analytics to figure out if I'm popular -->
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-59468177-1', 'auto');
     ga('send', 'pageview');
     </script>
@@ -31,38 +39,38 @@
             <div class="col col-sm-8">
                 <h1>{{resume.info.name}} {{resume.info.lastName}}</h1>
                 <address>
-                    <i class="fa fa-location-arrow"></i> {{resume.info.address.street}}
-                    {{resume.info.address.city}} {{resume.info.address.zip}}
-                    {{resume.info.address.country}} <br>
-                    <i class="fa fa-phone"></i> {{resume.info.mobile}}<br>
+                    <i class="fa fa-location-arrow"></i> {{resume.info.address.street}} {{resume.info.address.city}} {{resume.info.address.zip}} {{resume.info.address.country}}
+                    <br>
+                    <i class="fa fa-phone"></i> {{resume.info.mobile}}
+                    <br>
                     <i class="fa fa-envelope-o"></i> <a href="mailto:drickcanada@gmail.com">drickcanada@gmail.com</a>
                 </address>
-                
             </div>
-            <div class="col col-sm-3 col-sm-offset-1 hidden-xs">
-                <div class="pull-right visible-print-inline hidden-xs hidden-sm hiddem-md hidden-lg">
-                    
-                    <img style="height: 100px" src="https://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=andre=campos.github.io%2Fresume.html&qzone=0&margin=0&size=150x150&ecc=L">
+            <div class="col-sm-4">
+                <div class="pull-right hidden-screen">
+                    <img style="height: 100px; width: 100px" class="pull-right" src="https://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=andre=campos.github.io%2Fresume.html&qzone=0&margin=0&size=100x100&ecc=L">
                     <br>
-                    <a href="https://andre-campos.github.io">
-                        <span style="font-size: 8px;">https://andre-campos.github.io</span>
+                    <a href="https://andre-campos.github.io" class="pull-right">
+                        <span style="font-size: 8px;">andre-campos.github.io</span>
                     </a>
                 </div>
                 <div class="hidden-print hidden-xs">
                     <div class="pull-right">
-                        <a ng-href="https://stackOverflow.com/users/{{resume.info.stackOverflow}}"><img ng-src="https://stackoverflow.com/users/flair/{{resume.info.stackOverflow}}.png?theme=clean"></img></a>
-                    </div>
-                    <div class="pull-right">
-                        <span ng-show="resume.info.facebook"><a href="https://www.facebook.com/{{resume.info.facebook}}"><i class="fa fa-2x fa-facebook-square"></i></a></span>
-                        <span ng-show="resume.info.linkedin"><a href="https://br.linkedin.com/in/{{resume.info.linkedin}}"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
-                        <span ng-show="resume.info.gitHub"><a href="https://www.github.com/{{resume.info.gitHub}}"><i class="fa fa-2x fa-github-square"></i></a></span>
-                        <span ng-show="resume.info.twitter"><a href="https://www.twitter.com/{{resume.info.gitHub}}"><i class="fa fa-2x fa-twitter-square"></i></a></span>
+                        <div class="show">
+                            <a ng-href="https://stackOverflow.com/users/{{resume.info.stackOverflow}}"><img ng-src="https://stackoverflow.com/users/flair/{{resume.info.stackOverflow}}.png?theme=clean">
+                            </a>
+                        </div>
+                        <div class="pull-right">
+                            <span ng-show="resume.info.facebook"><a href="https://www.facebook.com/{{resume.info.facebook}}"><i class="fa fa-2x fa-facebook-square"></i></a></span>
+                            <span ng-show="resume.info.linkedin"><a href="https://br.linkedin.com/in/{{resume.info.linkedin}}"><i class="fa fa-2x fa-linkedin-square"></i></a></span>
+                            <span ng-show="resume.info.gitHub"><a href="https://www.github.com/{{resume.info.gitHub}}"><i class="fa fa-2x fa-github-square"></i></a></span>
+                            <span ng-show="resume.info.twitter"><a href="https://www.twitter.com/{{resume.info.gitHub}}"><i class="fa fa-2x fa-twitter-square"></i></a></span>
+                        </div>
                     </div>
                 </div>
-                
             </div>
             <div class="row">
-                <div class="col col-md-8">
+                <div class="col-sm-8 col-md-8">
                     <h4><i class="fa fa-cogs"></i> {{resume.experience.title}} </h4>
                     <p class="text-right hidden-print hidden-xs">
                         Proficiency Indicator:
@@ -72,42 +80,42 @@
                     </p>
                     <div ng-repeat="item in resume.experience.items" style="margin-bottom: 20px">
                         <h5><strong>{{item.title}} at {{item.company}}</strong> <a href="{{item.url}}" ng-show="item.url" class="hidden-print"><i class="fa fa-external-link" ></i></a><small> from {{item.from}} to {{item.to}}</small></h5>
-                        <ul  class="list-unstyled">
+                        <ul class="list-unstyled">
                             <li ng-repeat="duty in item.duties">
                                 <i class="fa fa-caret-right"></i> {{duty}}
                             </li>
                         </ul>
-                        <span  ng-repeat="skill in item.skills">
+                        <span ng-repeat="skill in item.skills">
                             <span class="label" proficiency="skill.proficiency" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> {{skill.name}}</span>
                         </span>
-                        
                     </div>
                     <div class="hidden-print">
-                         <h4><i class="fa fa-comments-o"></i> Please share your comments about this resume</h4>
-                    <div id="disqus_thread" ></div>
-                    <script type="text/javascript">
-                    /* * * CONFIGURATION VARIABLES * * */
-                    var disqus_shortname = 'andre-campos';
-                    
-                    /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function() {
-                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                    DISQUS.reset({
-                    reload: true,
-                    config: function () {
-                    this.page.identifier = "newidentifier";
-                    this.page.url = "http://example.com/#!newthread";
-                    }
-                    });
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                        <h4><i class="fa fa-comments-o"></i> Please share your comments about this resume</h4>
+                        <div id="disqus_thread"></div>
+                        <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES * * */
+                        var disqus_shortname = 'andre-campos';
+
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script');
+                            dsq.type = 'text/javascript';
+                            dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                        DISQUS.reset({
+                            reload: true,
+                            config: function() {
+                                this.page.identifier = "newidentifier";
+                                this.page.url = "http://example.com/#!newthread";
+                            }
+                        });
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
                     </div>
                 </div>
-                <div class="col-md-4 ">
-                    
+                <div class="col-sm-4 col-md-4 ">
                     <div class="side" ng-show="resume.info.bio">
                         <h4><i class="fa fa-user"></i> Bio</h4>
                         <p>{{resume.info.bio}}</p>
@@ -115,54 +123,53 @@
                     <div class="side" ng-show="resume.education.length > 0">
                         <h4><i class="fa fa-graduation-cap"></i> Education</h4>
                         <p ng-repeat="degree in resume.education">
-                            <img ng-src="{{degree.logo}}" style="float: left; height: 60px; margin-right: 10px" class="hidden-print"></img>
-                            <strong>{{degree.title}}</strong><span class="pull-right">{{degree.from}}<span ng-show="degree.to"> - {{degree.to}}</span></span><br>
-                            <span style="display: block; text-wrap: nowrap;">{{degree.institution}} <br>{{degree.location}}</span>
+                            <img ng-src="{{degree.logo}}" style="float: left; height: 60px; margin-right: 10px" class="hidden-print">
+                            <strong>{{degree.title}}</strong><span class="pull-right">{{degree.from}}<span ng-show="degree.to"> - {{degree.to}}</span></span>
                             <br>
+                            <span style="display: block; text-wrap: nowrap;">{{degree.institution}} <br>{{degree.location}}</span>
+                            <br class="hidden-print">
                         </p>
-                        
                     </div>
                     <div class="side" ng-show="resume.languages.length > 0">
                         <h4><i class="fa fa-globe"></i> Languages</h4>
                         <span>
-                            <p ng-repeat="lang in resume.languages"><span class="f16"><span class="flag {{lang.country}} hidden-print"></span></span> <strong>{{lang.name}}</strong> {{lang.level}}<br>
-                            <span ng-repeat="star in lang.stars" class="text-primary"><i class="fa fa-star" ng-show="star"></i><i class="fa fa-star-o" ng-hide="star"></i></span>
+                            <p ng-repeat="lang in resume.languages"><span class="f16"><span class="flag {{lang.country}} hidden-print"></span></span> <strong>{{lang.name}}</strong> {{lang.level}}
+                        <br>
+                        <span ng-repeat="star in lang.stars" class="text-primary"><i class="fa fa-star" ng-show="star"></i><i class="fa fa-star-o" ng-hide="star"></i></span>
                         </p>
-                    </span>
-                </div>
-                <div class="side" ng-show="resume.volunteerWork.length > 0">
-                    <h4><i class="fa fa-users"></i> Volunteer Work</h4>
-                    <span ng-repeat="item in resume.volunteerWork">
-                        <p ><strong>{{item.title}}</strong> of {{item.institution}} <a href="{{item.url}}" ng-show="item.url" class="hidden-print"><i class="fa fa-external-link" ></i></a></p>
-                        <ul  class="list-unstyled">
+                        </span>
+                    </div>
+                    <div class="side" ng-show="resume.volunteerWork.length > 0">
+                        <h4><i class="fa fa-users"></i> Volunteer Work</h4>
+                        <span ng-repeat="item in resume.volunteerWork">
+                        <strong>{{item.title}}</strong> of {{item.institution}} <a href="{{item.url}}" ng-show="item.url" class="hidden-print"><i class="fa fa-external-link" ></i></a><br>
+                        <ul  class="list-unstyled" style="margin-bottom: 10px">
                             <li ng-repeat="detail in item.details">
                                 <i class="fa fa-caret-right"></i> <span ng-bind-html-unsafe="detail"></span>
-                            </li>
+                        </li>
                         </ul>
-                    </span>
-                    
-                </div>
-                <div class="side" ng-show="resume.interests.length > 0">
-                    <h4><i class="fa fa-heart"></i> Interests</h4>
-                    <span ng-repeat="item in resume.interests" class="label label-warning" style="margin-left: 5px;display: inline-block;">{{item}}</span>
-                    
-                </div>
-                <div class="side hidden-print hidden-xs hidden-sm" >
-                    <h4><i class="fa fa-print"></i> Printing Instructions</h4>
-                    <p>Although most modern browsers will be able to print this page correctly, the result will not be pixel perfect. Therefore, if you wish to print this resume, please download the PDF file <a href="https://andre-campos.github.io/resume.pdf">here</a>.</p>
-                </div>
-                <div class="side hidden-print hidden-xs hidden-sm" >
-                    <h4><i class="fa fa-wrench"></i> Built with</h4>
-                    <a href="https://github.com/andre-campos/andre-campos.github.io"><img style="position: absolute; bottom: -18px; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
-                    <div class="pull-right">
-                        <img src="angular-js.png" style="height: 60px;">
-                        <img src="css3_html5_jquery_bootstrap.png" style="height: 60px;">
+                        </span>
+                    </div>
+                    <div class="side" ng-show="resume.interests.length > 0">
+                        <h4><i class="fa fa-heart"></i> Interests</h4>
+                        <span ng-repeat="item in resume.interests" class="label label-warning" style="margin-left: 5px;display: inline-block;">{{item}}</span>
+                    </div>
+                    <div class="side hidden-print hidden-xs hidden-sm">
+                        <h4><i class="fa fa-print"></i> Printing Instructions</h4>
+                        <p>Although most modern browsers will be able to print this page correctly, the result will not be pixel perfect. Therefore, if you wish to print this resume, please download the PDF file <a href="https://andre-campos.github.io/resume.pdf">here</a>.</p>
+                    </div>
+                    <div class="side hidden-print hidden-xs hidden-sm">
+                        <h4><i class="fa fa-wrench"></i> Built with</h4>
+                        <a href="https://github.com/andre-campos/andre-campos.github.io"><img style="position: absolute; bottom: -18px; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+                        <div class="pull-right">
+                            <img src="angular-js.png" style="height: 60px;">
+                            <img src="css3_html5_jquery_bootstrap.png" style="height: 60px;">
+                        </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>

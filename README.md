@@ -10,3 +10,7 @@ Why use Angular to write a resume? Because I can! And considering that I code fo
 The structure of the resume is fairly straight forward. If you don't intend on changing anything on the layout, you can ignore the html file altogether. Go directly to js/resume.js and replace my information with yours. I guess I could make angular load a JSON instead of writing the code directly in Javascript. But it seemed pretty much the same amount of work to me.
 
 If you have any suggestions, questions or criticism, do let me know.
+
+The easiest way to serve this is using python:
+python -m SimpleHTTPServer 8000
+
