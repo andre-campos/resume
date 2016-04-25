@@ -89,31 +89,6 @@
                             <span class="label" proficiency="skill.proficiency" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> {{skill.name}}</span>
                         </span>
                     </div>
-                    <div class="hidden-print">
-                        <h4><i class="fa fa-comments-o"></i> Please share your comments about this resume</h4>
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                        /* * * CONFIGURATION VARIABLES * * */
-                        var disqus_shortname = 'andre-campos';
-
-                        /* * * DON'T EDIT BELOW THIS LINE * * */
-                        (function() {
-                            var dsq = document.createElement('script');
-                            dsq.type = 'text/javascript';
-                            dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-                        DISQUS.reset({
-                            reload: true,
-                            config: function() {
-                                this.page.identifier = "newidentifier";
-                                this.page.url = "http://example.com/#!newthread";
-                            }
-                        });
-                        </script>
-                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-                    </div>
                 </div>
                 <div class="col-sm-4 col-md-4 ">
                     <div class="side" ng-show="resume.info.bio">
