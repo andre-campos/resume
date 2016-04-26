@@ -514,4 +514,3 @@ app.filter('filterPublications', [function(expectedPublications, key) {
     });
   });
 }]);
-

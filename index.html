@@ -48,25 +48,13 @@
                   <span ng-repeat="item in resume.interests" class="label label-warning" style="margin-left: 5px;display: inline-block;">{{item}}</span>
                </address>
             </div>
-            <!-- <div class="col col-sm-3 col-sm-offset-1 hidden-xs">
-               <div class="pull-right visible-print-inline hidden-xs hidden-sm hiddem-md hidden-lg"> <img style="height: 100px" src="https://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=andre=campos.github.io%2Fresume.html&qzone=0&margin=0&size=150x150&ecc=L"> <br>
-                   <a href="https://andre-campos.github.io"> <span style="font-size: 8px;">https://andre-campos.github.io</span> </a>
-               </div>
-               <div class="hidden-print hidden-xs">
-                   <div class="pull-right">
-                       <a ng-href="https://stackOverflow.com/users/{{resume.info.stackOverflow}}"> <img ng-src="https://stackoverflow.com/users/flair/{{resume.info.stackOverflow}}.png?theme=clean"></img>
-                       </a>
-                   </div>
-                   <div class="pull-right"> <span ng-show="resume.info.facebook"><a href="https://www.facebook.com/{{resume.info.facebook}}"><i class="fa fa-2x fa-facebook-square"></i></a></span> <span ng-show="resume.info.linkedin"><a href="https://br.linkedin.com/in/{{resume.info.linkedin}}"><i class="fa fa-2x fa-linkedin-square"></i></a></span> <span ng-show="resume.info.gitHub"><a href="https://www.github.com/{{resume.info.gitHub}}"><i class="fa fa-2x fa-github-square"></i></a></span> <span ng-show="resume.info.twitter"><a href="https://www.twitter.com/{{resume.info.gitHub}}"><i class="fa fa-2x fa-twitter-square"></i></a></span> </div>
-               </div>
-               </div> -->
          </div>
          <div class="row">
-            <div class="col-md-4 ">
+            <div class="col-sm-4 ">
                <div class="side" ng-show="resume.info.bio">
                   <h4><i class="fa fa-user"></i> Bio
                      <span class="pull-right" >
-                     <a  ng-click="minimize('bio')" >{{resume.minimize.bio | minimizeFilter:['+', '-']}}</a>
+                     <a  class="side hidden-print hidden-xs hidden-sm" ng-click="minimize('bio')" >{{resume.minimize.bio | minimizeFilter:['+', '-']}}</a>
                      </span>
                   </h4>
                   <my-bio info="resume" ng-hide="resume.minimize.bio"> </my-bio>
@@ -74,7 +62,7 @@
                <div class="side" ng-show="resume.publications.length > 0">
                   <h4><i class="fa fa-book"></i></i> Publications
                      <span class="pull-right" >
-                     <a  ng-click="minimize('publications')" >{{resume.minimize.publications | minimizeFilter:['+', '-']}}</a>
+                     <a class="side hidden-print hidden-xs hidden-sm" ng-click="minimize('publications')" >{{resume.minimize.publications | minimizeFilter:['+', '-']}}</a>
                      </span>
                   </h4>
                   <my-publications info="resume" ng-hide="resume.minimize.publications"> </my-publications>
@@ -82,7 +70,7 @@
                <div class="side" ng-show="resume.languages.length > 0">
                   <h4><i class="fa fa-globe"></i> Languages
                      <span class="pull-right" >
-                     <a  ng-click="minimize('languages')" >{{resume.minimize.languages | minimizeFilter:['+', '-']}}</a>
+                     <a class="side hidden-print hidden-xs hidden-sm" ng-click="minimize('languages')" >{{resume.minimize.languages | minimizeFilter:['+', '-']}}</a>
                      </span>
                   </h4>
                   <my-languages info="resume" ng-hide="resume.minimize.languages">
@@ -91,7 +79,7 @@
                <div class="side" ng-show="resume.volunteerWork.length > 0">
                   <h4><i class="fa fa-users"></i> Volunteer Work</h4>
                   <span ng-repeat="item in resume.volunteerWork">
-                     <p ><strong>{{item.title}}</strong> of {{item.institution}} <a href="{{item.url}}" ng-show="item.url" class="hidden-print"><i class="fa fa-external-link" ></i></a></p>
+                     <p ><strong>{{item.title}}</strong> of {{item.institution}} <a href="{{item.url}}" ng-show="item.url" class="side hidden-print hidden-xs hidden-sm"><i class="fa fa-external-link" ></i></a></p>
                      <ul  class="list-unstyled">
                         <li ng-repeat="detail in item.details">
                            <i class="fa fa-caret-right"></i> <span ng-bind-html-unsafe="detail"></span>
@@ -99,32 +87,24 @@
                      </ul>
                   </span>
                </div>
-               <!--                     <div class="side" ng-show="resume.interests.length > 0">
-                  <h4><i class="fa fa-heart"></i> Interests</h4>
-                  <span ng-repeat="item in resume.interests" class="label label-warning" style="margin-left: 5px;display: inline-block;">{{item}}</span>
-                  </div> -->
-               <!-- <div class="side hidden-print hidden-xs hidden-sm">
-                  <h4><i class="fa fa-print"></i> Printing Instructions</h4>
-                  <p>Although most modern browsers will be able to print this page correctly, the result will not be pixel perfect. Therefore, if you wish to print this resume, please download the PDF file <a href="https://andre-campos.github.io/resume.pdf">here</a>.</p>
-                  </div> -->
                <div class="side hidden-print hidden-xs hidden-sm">
                   <h4><i class="fa fa-wrench"></i> Built with</h4>
                   <a href="https://github.com/andre-campos/andre-campos.github.io"> <img style="position: absolute; bottom: -18px; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
                   <div class="pull-right"> <img src="angular-js.png" style="height: 60px;"> <img src="css3_html5_jquery_bootstrap.png" style="height: 60px;"> </div>
                </div>
             </div>
-            <div class="col col-md-8">
+            <div class="col col-sm-8">
                <div class="side" ng-show="resume.education.length > 0">
                   <h4><i class="fa fa-graduation-cap"></i> Education
                      <span class="pull-right" >
-                     <a  ng-click="minimize('education')" >{{resume.minimize.education | minimizeFilter:['+', '-']}}</a>
+                     <a class="side hidden-print hidden-xs hidden-sm" ng-click="minimize('education')" >{{resume.minimize.education | minimizeFilter:['+', '-']}}</a>
                      </span>
                   </h4>
                   <my-education info="resume" ng-hide="resume.minimize.education"> </my-education>
                </div>
                <h4><i class="fa fa-cogs"></i> {{resume.experience.title}}
                   <span class="pull-right" >
-                  <a  ng-click="minimize('experience')" >{{resume.minimize.experience | minimizeFilter:['+', '-']}}</a>
+                  <a class="side hidden-print hidden-xs hidden-sm" ng-click="minimize('experience')" >{{resume.minimize.experience | minimizeFilter:['+', '-']}}</a>
                   </span>
                </h4>
                <my-work-experience info="resume" ng-hide="resume.minimize.experience"> </my-work-experience>

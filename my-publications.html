@@ -1,4 +1,4 @@
-<label>Search: <input ng-model="searchText" ></label>
+<label class="hidden-print">Search: <input ng-model="searchText" ></label>
 <ul class="list-unstyled" ng-repeat="publication in resume.publications | filter:searchText">
    <a href="{{publication.link}}">{{publication.journal}} {{publication.date}}</a> {{publication.title}}</li>
 </ul>
