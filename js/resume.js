@@ -48,7 +48,7 @@ app.controller('ResumeCtrl', function($scope) {
         from: "2002",
         to: "2007",
         gpa: "6.7/9.0",
-        logo: "https://media.licdn.com/mpr/mpr/shrink_60_60/p/5/005/081/376/1d6e87b.png"
+        logo: "http://www.uvic.ca/brand/assets/images/graphics/logos/uvic_logo-vert.jpg"
     }; //logo: "https://media.licdn.com/mpr/mpr/shrink_60_60/p/5/005/081/376/1d6e87b.png"};
     resume.education.push(item);
     resume.experience = {
