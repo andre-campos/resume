@@ -37,7 +37,7 @@ app.controller('ResumeCtrl', function($scope) {
         from: "2009",
         to: "2011",
         gpa: "10.0/10.0",
-        logo: "http://estruturas.ufam.edu.br/images/logoUFAMcor.jpg"
+        logo: "ufam.jpeg"
     }; //logo: "http://estruturas.ufam.edu.br/images/logoUFAMcor.jpg"};
     resume.education.push(item);
 
