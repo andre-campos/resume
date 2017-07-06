@@ -67,6 +67,7 @@ app.controller('ResumeCtrl', function($scope) {
     item.duties = [];
     item.duties.push("Designed an online application hosted on MS Azure for brazilian international commerce operations");
     item.duties.push("Created a business plan and pitched it to investors");
+
         
     item.skills = [];
     item.skills.push({
@@ -76,6 +77,11 @@ app.controller('ResumeCtrl', function($scope) {
     item.skills.push({
         proficiency: "high",
         name: "Spring"
+    });
+
+    item.skills.push({
+        proficiency: "high",
+        name: "Jasper Reports"
     });
    
     item.skills.push({
@@ -152,6 +158,10 @@ app.controller('ResumeCtrl', function($scope) {
     item.skills.push({
         proficiency: "high",
         name: "Jasper Reports"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "BIRT"
     });
     item.skills.push({
         proficiency: "medium",
@@ -258,7 +268,7 @@ app.controller('ResumeCtrl', function($scope) {
         name: "Java"
     });
     item.skills.push({
-        proficiency: "medium",
+        proficiency: "high",
         name: "Crystal Reports"
     });
     item.skills.push({
