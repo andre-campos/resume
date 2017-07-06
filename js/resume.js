@@ -68,8 +68,9 @@ app.controller('ResumeCtrl', function($scope) {
     item.duties.push("Designed an online application hosted on MS Azure for brazilian international commerce operations");
     item.duties.push("Created a business plan and pitched it to investors");
 
-        
+
     item.skills = [];
+
     item.skills.push({
         proficiency: "high",
         name: "AngularJS",
@@ -79,11 +80,17 @@ app.controller('ResumeCtrl', function($scope) {
         name: "Spring"
     });
 
+
+    item.skills.push({
+        proficiency: "high",
+        name: "REST",
+    });
+
     item.skills.push({
         proficiency: "high",
         name: "Jasper Reports"
     });
-   
+
     item.skills.push({
         proficiency: "high",
         name: "MS SQL Server"
@@ -96,7 +103,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "high",
         name: "Leadership"
     });
-    
+
     resume.experience.items.push(item);
     item = {
         title: "Consultant",
@@ -108,7 +115,7 @@ app.controller('ResumeCtrl', function($scope) {
     item.url = "http://www.finisce.com.br";
     item.duties = [];
     item.duties.push("Designed an online financial planning platform");
-    
+
     item.skills = [];
     item.skills.push({
         proficiency: "high",
@@ -118,7 +125,13 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "high",
         name: "Spring"
     });
-   item.skills.push({
+
+
+    item.skills.push({
+        proficiency: "high",
+        name: "REST",
+    });
+    item.skills.push({
         proficiency: "high",
         name: "PostgreSQL"
     });
@@ -276,7 +289,7 @@ app.controller('ResumeCtrl', function($scope) {
         name: "C#"
     });
     resume.experience.items.push(item);
-    
+
     item = {
         title: "Java Programmer (Co-op)",
         company: "Pearson Coal Petrography",
