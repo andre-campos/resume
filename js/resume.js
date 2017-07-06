@@ -65,39 +65,36 @@ app.controller('ResumeCtrl', function($scope) {
     };
     item.url = "http://www.sigraweb.com";
     item.duties = [];
-    item.duties.push("Designed an online application hosted on MS Azure for brazilian international commerce operations");
-    item.duties.push("Created a business plan and pitched it to investors");
+
+    item.duties.push("Led a team of one software developer and one business specialist in the process of designing and shipping a SaaS product targeted at international commerce players, such as customs brokers and manufacturing plants");
+    item.duties.push("The platform was launched in January, 2017 and currently has 2 corporate clients, about 250 users, and generates monthly revenue of 10k BRL");
 
 
     item.skills = [];
 
     item.skills.push({
         proficiency: "high",
-        name: "AngularJS",
+        name: "Angular",
     });
     item.skills.push({
         proficiency: "high",
-        name: "Spring"
+        name: "Java"
     });
-
-
-    item.skills.push({
-        proficiency: "high",
-        name: "REST",
-    });
-
-    item.skills.push({
-        proficiency: "high",
-        name: "Jasper Reports"
-    });
-
     item.skills.push({
         proficiency: "high",
         name: "MS SQL Server"
     });
     item.skills.push({
         proficiency: "high",
-        name: "Azure"
+        name: "BI"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "MS Azure"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Project Management"
     });
     item.skills.push({
         proficiency: "high",
@@ -105,6 +102,46 @@ app.controller('ResumeCtrl', function($scope) {
     });
 
     resume.experience.items.push(item);
+    
+    item = {
+        title: "IT Director",
+        company: "Reck Aduaneira da Amazônia",
+        location: "Manaus, AM Brazil",
+        from: "01/2009",
+        to: "Present"
+    };
+    item.url = "http://www.reckaduaneira.com.br";
+    item.duties = [];
+    item.duties.push("Designed a mission-critical application integrated to the Brazilian international commerce systems (SISCOMEX)");
+    item.duties.push("By providing users with an extensive set of automated agents and a well-thought-out user experience, the platform helped Reck Aduaneira reduce the operational errors by 30% and the after hours by 40%");
+
+    item.skills = [];
+    item.skills.push({
+        proficiency: "high",
+        name: "Angular",
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Java"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "PostgreSQL"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "BI"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Project Management"
+    });
+    item.skills.push({
+        proficiency: "medium",
+        name: "Leadership"
+    });
+    resume.experience.items.push(item);
+
     item = {
         title: "Consultant",
         company: "Finis Consultoria Econômica",
@@ -119,17 +156,11 @@ app.controller('ResumeCtrl', function($scope) {
     item.skills = [];
     item.skills.push({
         proficiency: "high",
-        name: "AngularJS",
+        name: "Angular",
     });
     item.skills.push({
         proficiency: "high",
-        name: "Spring"
-    });
-
-
-    item.skills.push({
-        proficiency: "high",
-        name: "REST",
+        name: "Java"
     });
     item.skills.push({
         proficiency: "high",
@@ -140,51 +171,8 @@ app.controller('ResumeCtrl', function($scope) {
         name: "Heroku"
     });
     resume.experience.items.push(item);
-    item = {
-        title: "IT Director",
-        company: "Reck Aduaneira da Amazônia",
-        location: "Manaus, AM Brazil",
-        from: "01/2009",
-        to: "Present"
-    };
-    item.url = "http://www.reckaduaneira.com.br";
-    item.duties = [];
-    item.duties.push("Designed a mission-critical application integrated to the brazilian international commerce systems (SISCOMEX)");
-    item.duties.push("Designed a customer-facing website for interaction with clients");
-    item.skills = [];
-    item.skills.push({
-        proficiency: "high",
-        name: "AngularJS",
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "Spring"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "JSF"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "PostgreSQL"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "Jasper Reports"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "BIRT"
-    });
-    item.skills.push({
-        proficiency: "medium",
-        name: "Perl"
-    });
-    item.skills.push({
-        proficiency: "medium",
-        name: "AutoIt"
-    });
-    resume.experience.items.push(item);
+
+
     item = {
         title: "Consultant",
         company: "Acao Investimentos",
@@ -197,11 +185,7 @@ app.controller('ResumeCtrl', function($scope) {
     item.skills = [];
     item.skills.push({
         proficiency: "high",
-        name: "Spring"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "JSF"
+        name: "Java"
     });
     item.skills.push({
         proficiency: "high",
@@ -209,7 +193,7 @@ app.controller('ResumeCtrl', function($scope) {
     });
     item.skills.push({
         proficiency: "high",
-        name: "Jasper Reports"
+        name: "BI"
     });
     item.skills.push({
         proficiency: "low",
@@ -225,7 +209,7 @@ app.controller('ResumeCtrl', function($scope) {
     };
     item.url = "http://www.fucapi.br";
     item.duties = [];
-    item.duties.push("Joined a team that built a set-top box (Brazilian DTV standard) from scratch, based on the ST7100 platform");
+    item.duties.push("Actively participated on the design and implementation of a set-top box (Brazilian Digital TV standard) based on the ST7100 platform");
     item.skills = [];
     item.skills.push({
         proficiency: "high",
@@ -376,7 +360,7 @@ app.controller('ResumeCtrl', function($scope) {
     item.url = "http://www.fucapi.br";
     item.duties = [];
     item.duties.push("Developed J2ME applications for Nokia devices");
-    item.duties.push("Developed Linux device drivers for ATMs and an implementation of the brazilian electoral system");
+    item.duties.push("Developed Linux device drivers for ATMs and an implementation of the Brazilian electoral system");
     item.skills = [];
     item.skills.push({
         proficiency: "high",
@@ -475,7 +459,7 @@ app.controller('ResumeCtrl', function($scope) {
         stars: [true, false, false, false, false],
         country: 'de'
     });
-    resume.interests = ["Soccer", "Traveling", "Cooking", "Guitar playing", "Fitness", "Jiu-jitsu", "Udacity courses"];
+    resume.interests = ["Family", "Soccer", "Traveling", "Cooking", "Music", "Udacity courses"];
     resume.references = "Excellent references available upon request";
     $scope.resume = resume;
 });

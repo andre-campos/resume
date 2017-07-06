@@ -36,7 +36,7 @@
     </script>
     <div class="container">
         <div class="row">
-            <div class="col col-sm-8">
+            <div class="col col-sm-8" style="padding-left: 0">
                 <h1>{{resume.info.name}} {{resume.info.lastName}}</h1>
                 <address>
                     <i class="fa fa-location-arrow"></i> {{resume.info.address.street}} {{resume.info.address.city}} {{resume.info.address.zip}} {{resume.info.address.country}}
@@ -84,8 +84,12 @@
                             <li ng-repeat="duty in item.duties">
                                 <i class="fa fa-caret-right"></i> {{duty}}
                             </li>
+                            <li class="hidden-screen">
+                                <i class="fa fa-caret-right"></i> Skills: <span ng-repeat="skill in item.skills">{{skill.name}}<span ng-show="$index < item.skills.length-1">,</span> <span ng-show="$index == item.skills.length-2">and</span> </span>
+                            </li>
+
                         </ul>
-                        <span ng-repeat="skill in item.skills">
+                        <span ng-repeat="skill in item.skills" class="hidden-print">
                             <span class="label" proficiency="skill.proficiency" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> {{skill.name}}</span>
                         </span>
                     </div>
@@ -125,7 +129,7 @@
                         </ul>
                         </span>
                     </div>
-                    <div class="side" ng-show="resume.interests.length > 0">
+                    <div class="side hidden-print" ng-show="resume.interests.length > 0">
                         <h4><i class="fa fa-heart"></i> Interests</h4>
                         <span ng-repeat="item in resume.interests" class="label label-warning" style="margin-left: 5px;display: inline-block;">{{item}}</span>
                     </div>
