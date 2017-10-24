@@ -5,13 +5,13 @@ app.controller('ResumeCtrl', function($scope) {
         name: "André",
         lastName: "Campos",
         email: "drickcanada@gmail.com",
-        mobile: "+55 92 99159-0537"
+        mobile: "604-360-6018"
     };
     info.address = {
-        street: "Av. Cel. Teixeira, 8197 Ap 603A",
-        city: "Manaus, AM",
-        country: "Brazil",
-        zip: "69037-473"
+        street: "1450 Laing Drive",
+        city: "North Vancouver, BC",
+        country: "Canada",
+        zip: "V7R 1B7"
     };
     info.stackOverflow = 323807;
     info.gitHub = "andre-campos";
