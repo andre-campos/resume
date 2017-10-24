@@ -61,7 +61,7 @@ app.controller('ResumeCtrl', function($scope) {
         company: "Sigraweb",
         location: "Manaus, AM Brazil",
         from: "01/2016",
-        to: "Present"
+        to: "09/2017"
     };
     item.url = "http://www.sigraweb.com";
     item.duties = [];
@@ -108,7 +108,7 @@ app.controller('ResumeCtrl', function($scope) {
         company: "Reck Aduaneira da Amazônia",
         location: "Manaus, AM Brazil",
         from: "01/2009",
-        to: "Present"
+        to: "09/2017"
     };
     item.url = "http://www.reckaduaneira.com.br";
     item.duties = [];
@@ -147,7 +147,7 @@ app.controller('ResumeCtrl', function($scope) {
         company: "Finis Consultoria Econômica",
         location: "Manaus, AM Brazil",
         from: "07/2015",
-        to: "Present"
+        to: "01/2017"
     };
     item.url = "http://www.finisce.com.br";
     item.duties = [];
