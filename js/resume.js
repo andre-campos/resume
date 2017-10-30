@@ -78,15 +78,27 @@ app.controller('ResumeCtrl', function($scope) {
     });
     item.skills.push({
         proficiency: "high",
+        name: "Javascript",
+    });
+    item.skills.push({
+        proficiency: "high",
         name: "Java"
     });
     item.skills.push({
         proficiency: "high",
-        name: "MS SQL Server"
+        name: "Spring"
     });
     item.skills.push({
         proficiency: "high",
-        name: "BI"
+        name: "Hibernate"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "REST"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "MS SQL Server"
     });
     item.skills.push({
         proficiency: "high",
@@ -122,7 +134,19 @@ app.controller('ResumeCtrl', function($scope) {
     });
     item.skills.push({
         proficiency: "high",
+        name: "Javascript",
+    });
+    item.skills.push({
+        proficiency: "high",
         name: "Java"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Spring"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Hibernate"
     });
     item.skills.push({
         proficiency: "high",
@@ -160,7 +184,19 @@ app.controller('ResumeCtrl', function($scope) {
     });
     item.skills.push({
         proficiency: "high",
+        name: "Javascript",
+    });
+    item.skills.push({
+        proficiency: "high",
         name: "Java"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Spring"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Hibernate"
     });
     item.skills.push({
         proficiency: "high",
