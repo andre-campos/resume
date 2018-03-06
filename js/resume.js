@@ -8,17 +8,17 @@ app.controller('ResumeCtrl', function($scope) {
         mobile: "604-360-6018"
     };
     info.address = {
-        street: "1450 Laing Drive",
+        street: "307-255 1st St W",
         city: "North Vancouver, BC",
         country: "Canada",
-        zip: "V7R 1B7"
+        zip: "V7M 3G8"
     };
     info.stackOverflow = 323807;
     info.gitHub = "andre-campos";
     info.facebook = "andre.n.campos";
     info.linkedin = "andrencampos";
     info.photoUrl = "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/00d/39b/267fc2f.jpg";
-    info.bio = "André was born in Brazil and moved to Canada for his undergraduate studies at UVic. After returning home to Manaus, André finished a Masters Degree while battling cancer. Then, he designed and built the software that runs his family's international commerce business while doing some external consulting work. After taking the Stanford Ignite program on entrepreneurship, André decided to turn the international commerce platform into an actual business.";
+    info.bio = "André was born in Brazil and moved to Canada for his undergraduate studies at UVic. After returning home to Manaus, André finished a Masters Degree while battling cancer. Then, he designed and built the software that runs his family's international commerce business while doing some external consulting work. After taking the Stanford Ignite program on entrepreneurship, André decided to turn the international commerce platform into an actual business. As part of his constant pursue of self-improvement, André decided to reboot his career and join an industry he always dreamed being a part of: games. In the end of 2017 André moved to Canada with his family and joined Demonware to work on one of the most successful gaming franchises ever created: Call of Duty.";
     info.twitter = undefined;
     resume.info = info;
     resume.education = [];
@@ -55,6 +55,41 @@ app.controller('ResumeCtrl', function($scope) {
         title: "Work Experience",
         items: []
     };
+
+    item = {
+        title: "Intermediate Software Developer",
+        company: "Demonware (Activision / Blizzard)",
+        location: "Vancouver, BC Canada",
+        from: "11/2017",
+        to: "present"
+    };
+    item.url = "https://www.demonware.net";
+    item.duties = [];
+
+    item.duties.push("Developed features used by millions of Call of Duty players worldwide");
+    item.duties.push("Provided studios with excellent technical support to use the services provided by Demonware");
+
+    item.skills = [];
+
+    item.skills.push({
+        proficiency: "high",
+        name: "Python",
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Docker",
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "C++"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "MySQL"
+    });
+ 
+    resume.experience.items.push(item);
+
 
     item = {
         title: "Founder & CEO",
