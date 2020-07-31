@@ -8,17 +8,17 @@ app.controller('ResumeCtrl', function($scope) {
         mobile: "604-360-6018"
     };
     info.address = {
-        street: "307-255 1st St W",
+        street: "9-715 Tobruck Ave",
         city: "North Vancouver, BC",
         country: "Canada",
-        zip: "V7M 3G8"
+        zip: "V7P 1V9"
     };
     info.stackOverflow = 323807;
     info.gitHub = "andre-campos";
     info.facebook = "andre.n.campos";
     info.linkedin = "andrencampos";
     info.photoUrl = "https://media.licdn.com/mpr/mpr/shrink_200_200/p/3/000/00d/39b/267fc2f.jpg";
-    info.bio = "André was born in Brazil and moved to Canada for his undergraduate studies at UVic. After returning home to Manaus, André finished a Masters Degree while battling cancer. Then, he designed and built the software that runs his family's international commerce business while doing some external consulting work. After taking the Stanford Ignite program on entrepreneurship, André decided to turn the international commerce platform into an actual business. As part of his constant pursue of self-improvement, André decided to reboot his career and join an industry he always dreamed being a part of: games. In the end of 2017 André moved to Canada with his family and joined Demonware to work on one of the most successful gaming franchises ever created: Call of Duty.";
+    info.bio = "André completed his undergrad at UVic and returned to his hometown, Manaus in 2007. He nearly moved to Europe for more education at ETH Zurich, but life threw a curve ball at him. Instead, he stayed in Manaus in order to battle cancer and completed a Masters program while doing that. He then created an application for customs clearance, which was first adopted by his family business. Inspired by the Stanford Ignite program, André turned that into a SaaS venture of its own. He decided to move back to Canada and reboot his career to join the gaming industry in 2017.";
     info.twitter = undefined;
     resume.info = info;
     resume.education = [];
@@ -31,7 +31,7 @@ app.controller('ResumeCtrl', function($scope) {
     }; //logo: "http://estruturas.ufam.edu.br/images/logoUFAMcor.jpg"};
     resume.education.push(item);
     item = {
-        title: "MSc, CS",
+        title: "MSc, Comp Sci",
         institution: "Federal University of Amazonas",
         location: "Manaus, AM Brazil",
         from: "2009",
@@ -52,22 +52,76 @@ app.controller('ResumeCtrl', function($scope) {
     }; //logo: "https://media.licdn.com/mpr/mpr/shrink_60_60/p/5/005/081/376/1d6e87b.png"};
     resume.education.push(item);
     resume.experience = {
-        title: "Work Experience",
+        title: "Selected Work Experience",
         items: []
     };
 
     item = {
-        title: "Intermediate Software Developer",
-        company: "Demonware (Activision / Blizzard)",
+        title: "Team Lead",
+        company: "Demonware",
         location: "Vancouver, BC Canada",
-        from: "11/2017",
+        from: "11/2018",
         to: "present"
     };
     item.url = "https://www.demonware.net";
     item.duties = [];
 
+    item.duties.push("Led a team of 10+ Engineers (devs and SREs) responsible for creating online features for Call of Duty: Modern Warfare and its free-to-play extension, Warzone");
+    
+    item.duties.push("Worked closely with Infinity Ward and High Moon Studios to scope out, prioritize, and deliver new services and C++ libraries to support cross-play for the first time in the history of the Call of Duty franchise");
+    
+    item.duties.push("Provided Infinity Ward with heroic launch support for both Modern Warfare and Warzone, which has been the most successful launch in Activision history");
+    item.duties.push("Actively participated in planning and building out services in Kubernetes for the first time in Demonware history at a large scale");
+
+    item.duties.push("Led efforts to reduce toxicity in the Call of Duty online community, from hands-on development of a new profanity filter and moderation tools to collaborating at a very high level with Infinity Ward production and Activision executives to set the direction for managing toxicity");
+
+    item.duties.push("Perfomance: trending to become the only Team Lead to ever receive the maximum rating from his particular Director");
+    
+
+    item.skills = [];
+
+    item.skills.push({
+        proficiency: "high",
+        name: "Python",
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Kubernetes",
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "C++"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Project Management"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Leadership"
+    });
+ 
+    resume.experience.items.push(item);
+
+    item = {
+        title: "Software Engineer",
+        company: "Demonware",
+        location: "Vancouver, BC Canada",
+        from: "11/2017",
+        to: "11/2018"
+    };
+    item.url = "https://www.demonware.net";
+    item.duties = [];
+
+    item.duties.push("Led load testing efforts at unprecedented scale to push the boundaries of Demonware infrastructure in order to identify and mitigate performance bottlenecks for Call of Duty: Black Ops IIII");
+
+    item.duties.push("Built scripts for analyzing and planning hardware allocation and to provision significant portions of the virtualized infrastructure behind the online services of Call of Duty: Black Ops IIII");
+
     item.duties.push("Developed features used by millions of Call of Duty players worldwide");
-    item.duties.push("Provided studios with excellent technical support to use the services provided by Demonware");
+    item.duties.push("Provided Call of Duty studios with excellent technical support of Demonware's tech");
+
+    item.duties.push("Performance: trending towards maximum rating before Team Lead promotion");
+
 
     item.skills = [];
 
@@ -87,6 +141,10 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "high",
         name: "MySQL"
     });
+    item.skills.push({
+        proficiency: "high",
+        name: "GitHub"
+    });
  
     resume.experience.items.push(item);
 
@@ -102,34 +160,18 @@ app.controller('ResumeCtrl', function($scope) {
     item.duties = [];
 
     item.duties.push("Led a team of one software developer and one business specialist in the process of designing and shipping a SaaS product targeted at international commerce players, such as customs brokers and manufacturing plants");
-    item.duties.push("The platform was launched in January, 2017 and currently has 2 corporate clients, about 250 users, and generates monthly revenue of 10k BRL");
-
+    item.duties.push("The platform was launched in January, 2017 and currently has 4 corporate clients, about 350 active users, and generates monthly revenue of 25k BRL");
 
     item.skills = [];
 
     item.skills.push({
         proficiency: "high",
-        name: "Angular",
+        name: "AngularJS",
     });
+    
     item.skills.push({
         proficiency: "high",
-        name: "Javascript",
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "Java"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "Spring"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "Hibernate"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "REST"
+        name: "Java (Spring + Hibernate)"
     });
     item.skills.push({
         proficiency: "high",
@@ -165,23 +207,11 @@ app.controller('ResumeCtrl', function($scope) {
     item.skills = [];
     item.skills.push({
         proficiency: "high",
-        name: "Angular",
+        name: "AngularJS",
     });
     item.skills.push({
         proficiency: "high",
-        name: "Javascript",
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "Java"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "Spring"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "Hibernate"
+        name: "Java (Spring + Hibernate)"
     });
     item.skills.push({
         proficiency: "high",
@@ -189,14 +219,6 @@ app.controller('ResumeCtrl', function($scope) {
     });
     item.skills.push({
         proficiency: "high",
-        name: "BI"
-    });
-    item.skills.push({
-        proficiency: "high",
-        name: "Project Management"
-    });
-    item.skills.push({
-        proficiency: "medium",
         name: "Leadership"
     });
     resume.experience.items.push(item);
@@ -208,6 +230,7 @@ app.controller('ResumeCtrl', function($scope) {
         from: "07/2015",
         to: "01/2017"
     };
+    item.hide = true;
     item.url = "http://www.finisce.com.br";
     item.duties = [];
     item.duties.push("Designed an online financial planning platform");
@@ -251,6 +274,7 @@ app.controller('ResumeCtrl', function($scope) {
         from: "01/2009",
         to: "01/2015"
     };
+    item.hide = true;
     item.duties = [];
     item.duties.push("Designed a web-based CRM tailored to stock brokers that was deployed to 7 different offices across Brazil");
     item.skills = [];
@@ -278,6 +302,7 @@ app.controller('ResumeCtrl', function($scope) {
         from: "01/2008",
         to: "12/2008"
     };
+    item.hide = true;
     item.url = "http://www.fucapi.br";
     item.duties = [];
     item.duties.push("Actively participated on the design and implementation of a set-top box (Brazilian Digital TV standard) based on the ST7100 platform");
@@ -343,6 +368,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "low",
         name: "C#"
     });
+    item.hide = true;
     resume.experience.items.push(item);
 
     item = {
@@ -449,22 +475,23 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "medium",
         name: "device drivers"
     });
+    item.hide = true;
     resume.experience.items.push(item);
 
 
     resume.volunteerWork = [];
     item = {
-        title: "Proud member",
+        title: "Former member",
         institution: "Barraca do Bixiga",
         location: "Manaus, AM Brasil",
         from: "2011",
         to: "present"
     };
     item.details = [];
-    item.details.push("Works as an obnoxious waiter serving pizza for thousands of customers; all profit goes to the <a href='www.manaus.apaebrasil.org.br'>APAE</a> Foundation");
+    item.details.push("Worked as an obnoxious waiter serving pizza and beer in benefit of the <a href='www.manaus.apaebrasil.org.br'>APAE</a> Foundation");
     resume.volunteerWork.push(item);
     item = {
-        title: "Proud member",
+        title: "Former member",
         institution: "GACC-AM",
         location: "Manaus, AM Brasil",
         from: "11/2009",
@@ -472,7 +499,7 @@ app.controller('ResumeCtrl', function($scope) {
         url: "http://gacc-am.blogspot.com.br/"
     };
     item.details = [];
-    item.details.push("Created and organized a yearly event called <strong>Don't bend, don't break</strong>, which raised over BRL 100,000.00 towards GACC");
+    item.details.push("Created and organized a yearly event called <strong>Don't bend, don't break</strong>, which raised over BRL 100k towards GACC");
     resume.volunteerWork.push(item);
     item = {
         title: "Founder",
@@ -483,8 +510,8 @@ app.controller('ResumeCtrl', function($scope) {
         url: "http://communications.uvic.ca/releases/makepdf.php?type=release&display=release&id=719"
     };
     item.details = [];
-    item.details.push("Led fellow RA's during the organization of a wide range of fundraising activities across the UVic campus");
-    item.details.push("Raised over $ 12,000 towards the United Way");
+    item.details.push("Organized fundraising activities and raised over CAD 12k for United Way");
+
     resume.volunteerWork.push(item);
 
     resume.awards = {
@@ -518,18 +545,7 @@ app.controller('ResumeCtrl', function($scope) {
         stars: [true, true, true, true, true],
         country: 'ca'
     });
-    resume.languages.push({
-        name: "Spanish",
-        level: "intermediate",
-        stars: [true, true, true, false, false],
-        country: 'es'
-    });
-    resume.languages.push({
-        name: "German",
-        level: "basic",
-        stars: [true, false, false, false, false],
-        country: 'de'
-    });
+ 
     resume.interests = ["Family", "Soccer", "Traveling", "Cooking", "Music", "Udacity courses"];
     resume.references = "Excellent references available upon request";
     $scope.resume = resume;
@@ -552,7 +568,7 @@ var fct = function($compile) {
                     star = 'fa fa-star-half-o';
                 }
                 element.addClass(c);
-                element.addClass(star);
+                // element.addClass(star);
             });
         }
     }

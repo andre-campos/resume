@@ -72,14 +72,10 @@
             <div class="row">
                 <div class="col-sm-8 col-md-8">
                     <h4><i class="fa fa-cogs"></i> {{resume.experience.title}} </h4>
-                    <p class="text-right hidden-print hidden-xs">
-                        Experience level:
-                        <span class="label" proficiency="'low'" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> Low</span>
-                        <span class="label" proficiency="'medium'" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> Medium</span>
-                        <span class="label" proficiency="'high'" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> High</span>
-                    </p>
-                    <div ng-repeat="item in resume.experience.items" style="margin-bottom: 20px">
-                        <h5><strong>{{item.title}} at {{item.company}}</strong> <a href="{{item.url}}" ng-show="item.url" class="hidden-print"><i class="fa fa-external-link" ></i></a><small> from {{item.from}} to {{item.to}}</small></h5>
+    
+                    <div ng-repeat="item in resume.experience.items" style="margin-bottom: 20px" ng-show="!item.hide">
+                        <p style="margin:0"><strong>{{item.title}} at {{item.company}}</strong> <a href="{{item.url}}" ng-show="item.url" class="hidden-print"><i class="fa fa-external-link" ></i></a><small> from {{item.from}} to {{item.to}}</small>
+
                         <ul class="list-unstyled">
                             <li ng-repeat="duty in item.duties">
                                 <i class="fa fa-caret-right"></i> {{duty}}
@@ -89,9 +85,11 @@
                             </li>
 
                         </ul>
+
                         <span ng-repeat="skill in item.skills" class="hidden-print">
                             <span class="label" proficiency="skill.proficiency" style="margin-left: 5px; margin-top: 5px; display: inline-block;"> {{skill.name}}</span>
                         </span>
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-4 col-md-4 ">
