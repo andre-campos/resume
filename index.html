@@ -71,9 +71,9 @@
             </div>
             <div class="row">
                 <div class="col-sm-8 col-md-8">
-                    <h4><i class="fa fa-cogs"></i> {{resume.experience.title}} </h4>
+                    <h4><i class="fa fa-cogs"></i> <span class="hidden-print">Complete</span> <span class="hidden-screen">Selected</span> {{resume.experience.title}} </h4>
     
-                    <div ng-repeat="item in resume.experience.items" style="margin-bottom: 20px" ng-show="!item.hide">
+                    <div ng-repeat="item in resume.experience.items" style="margin-bottom: 20px" ng-class="item.class">
                         <p style="margin:0"><strong>{{item.title}} at {{item.company}}</strong> <a href="{{item.url}}" ng-show="item.url" class="hidden-print"><i class="fa fa-external-link" ></i></a><small> from {{item.from}} to {{item.to}}</small>
 
                         <ul class="list-unstyled">
@@ -116,7 +116,7 @@
                         </p>
                         </span>
                     </div>
-                    <div class="side" ng-show="resume.volunteerWork.length > 0">
+                    <div class="side hidden-print" ng-show="resume.volunteerWork.length > 0" class="hidden-print">
                         <h4><i class="fa fa-users"></i> Volunteer Work</h4>
                         <span ng-repeat="item in resume.volunteerWork">
                         <strong>{{item.title}}</strong> of {{item.institution}} <a href="{{item.url}}" ng-show="item.url" class="hidden-print"><i class="fa fa-external-link" ></i></a><br>

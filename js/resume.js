@@ -52,7 +52,7 @@ app.controller('ResumeCtrl', function($scope) {
     }; //logo: "https://media.licdn.com/mpr/mpr/shrink_60_60/p/5/005/081/376/1d6e87b.png"};
     resume.education.push(item);
     resume.experience = {
-        title: "Selected Work Experience",
+        title: "Work Experience",
         items: []
     };
 
