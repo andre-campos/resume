@@ -57,26 +57,58 @@ app.controller('ResumeCtrl', function($scope) {
     };
 
     item = {
-        title: "Team Lead",
+        title: "Engineering Manager",
         company: "Demonware",
         location: "Vancouver, BC Canada",
-        from: "11/2018",
+        from: "08/2020",
         to: "present"
     };
     item.url = "https://www.demonware.net";
     item.duties = [];
 
-    item.duties.push("Led a team of 10+ Engineers (devs and SREs) responsible for creating online features for Call of Duty: Modern Warfare and its free-to-play extension, Warzone");
-    
-    item.duties.push("Worked closely with Infinity Ward and High Moon Studios to scope out, prioritize, and deliver new services and C++ libraries to support cross-play for the first time in the history of the Call of Duty franchise");
-    
-    item.duties.push("Provided Infinity Ward with heroic launch support for both Modern Warfare and Warzone, which has been the most successful launch in Activision history");
-    item.duties.push("Actively participated in planning and building out services in Kubernetes for the first time in Demonware history at a large scale");
+    item.duties.push("Worked closely with studios and tech leads towards establishing a long-term vision for cross-title social services");
+    item.duties.push("Interviewed dozens of candidates for full-time and internship positions");
+    item.duties.push("Led efforts to reduce toxicity in the Call of Duty online community");
 
-    item.duties.push("Led efforts to reduce toxicity in the Call of Duty online community, from hands-on development of a new profanity filter and moderation tools to collaborating at a very high level with Infinity Ward production and Activision executives to set the direction for managing toxicity");
+    item.skills = [];
 
-    item.duties.push("Perfomance: trending to become the only Team Lead to ever receive the maximum rating from his particular Director");
-    
+    item.skills.push({
+        proficiency: "high",
+        name: "Python",
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Kubernetes",
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "C++"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Project Management"
+    });
+    item.skills.push({
+        proficiency: "high",
+        name: "Leadership"
+    });
+ 
+    resume.experience.items.push(item);
+
+    item = {
+        title: "Team Lead",
+        company: "Demonware",
+        location: "Vancouver, BC Canada",
+        from: "11/2018",
+        to: "08/2020"
+    };
+    item.url = "https://www.demonware.net";
+    item.duties = [];
+
+    item.duties.push("Led a team of 10+ Engineers (devs and SREs) responsible for creating online features for Call of Duty: Modern Warfare");
+    item.duties.push("Worked closely with Infinity Ward and High Moon Studios to deliver novel services for cross-play support");   
+    item.duties.push("Provided Infinity Ward with heroic launch support for Modern Warfare and Warzone");
+    item.duties.push("Led planning and building out services in Kubernetes for the first time in Demonware history at a large scale");
 
     item.skills = [];
 
@@ -120,8 +152,6 @@ app.controller('ResumeCtrl', function($scope) {
     item.duties.push("Developed features used by millions of Call of Duty players worldwide");
     item.duties.push("Provided Call of Duty studios with excellent technical support of Demonware's tech");
 
-    item.duties.push("Performance: trending towards maximum rating before Team Lead promotion");
-
 
     item.skills = [];
 
@@ -159,8 +189,8 @@ app.controller('ResumeCtrl', function($scope) {
     item.url = "http://www.sigraweb.com";
     item.duties = [];
 
-    item.duties.push("Led a team of one software developer and one business specialist in the process of designing and shipping a SaaS product targeted at international commerce players, such as customs brokers and manufacturing plants");
-    item.duties.push("The platform was launched in January, 2017 and currently has 4 corporate clients, about 350 active users, and generates monthly revenue of 25k BRL");
+    item.duties.push("Led a team of one software developer and one business specialist in the process of designing and shipping a SaaS product targeted at international commerce players");
+    item.duties.push("The platform was launched in 2017 and currently has 4 corporate clients and generates monthly revenue of 25k BRL");
 
     item.skills = [];
 
@@ -221,6 +251,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "high",
         name: "Leadership"
     });
+    item.class = 'hidden-print'
     resume.experience.items.push(item);
 
     item = {
@@ -230,7 +261,7 @@ app.controller('ResumeCtrl', function($scope) {
         from: "07/2015",
         to: "01/2017"
     };
-    item.hide = true;
+    item.class = 'hidden-print'
     item.url = "http://www.finisce.com.br";
     item.duties = [];
     item.duties.push("Designed an online financial planning platform");
@@ -274,7 +305,7 @@ app.controller('ResumeCtrl', function($scope) {
         from: "01/2009",
         to: "01/2015"
     };
-    item.hide = true;
+    item.class = 'hidden-print'
     item.duties = [];
     item.duties.push("Designed a web-based CRM tailored to stock brokers that was deployed to 7 different offices across Brazil");
     item.skills = [];
@@ -302,7 +333,7 @@ app.controller('ResumeCtrl', function($scope) {
         from: "01/2008",
         to: "12/2008"
     };
-    item.hide = true;
+    item.class = 'hidden-print'
     item.url = "http://www.fucapi.br";
     item.duties = [];
     item.duties.push("Actively participated on the design and implementation of a set-top box (Brazilian Digital TV standard) based on the ST7100 platform");
@@ -319,6 +350,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "medium",
         name: "C"
     });
+
     resume.experience.items.push(item);
     item = {
         title: "Part-time Developer",
@@ -343,7 +375,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "low",
         name: "Apache Cocoon"
     });
-    item.hide = true;
+    item.class = 'hidden-print'
     resume.experience.items.push(item);
     item = {
         title: "Software Developer (Co-op)",
@@ -368,7 +400,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "low",
         name: "C#"
     });
-    item.hide = true;
+    item.class = 'hidden-print'
     resume.experience.items.push(item);
 
     item = {
@@ -400,7 +432,7 @@ app.controller('ResumeCtrl', function($scope) {
         name: "C++"
     });
 
-    item.hide = true;
+    item.class = 'hidden-print'
     resume.experience.items.push(item);
     item = {
         title: "Application Developer (Co-op)",
@@ -424,7 +456,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "low",
         name: "Map Point"
     });
-    item.hide = true;
+    item.class = 'hidden-print'
     resume.experience.items.push(item);
     item = {
         title: "Residence Advisor",
@@ -444,7 +476,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "medium",
         name: "Team-work"
     })
-    item.hide = true;
+    item.class = 'hidden-print'
     resume.experience.items.push(item);
 
     item = {
@@ -475,7 +507,7 @@ app.controller('ResumeCtrl', function($scope) {
         proficiency: "medium",
         name: "device drivers"
     });
-    item.hide = true;
+    item.class = 'hidden-print'
     resume.experience.items.push(item);
 
 
